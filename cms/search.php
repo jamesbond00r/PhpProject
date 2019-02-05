@@ -4,7 +4,11 @@
 
     <!-- Navigation -->
     
-    
+    <?php  
+
+include "includes/nav.php";
+
+  ?>
     
  
     <!-- Page Content -->
