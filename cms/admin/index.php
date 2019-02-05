@@ -4,6 +4,9 @@
 
 <div id="wrapper">
 
+
+<!-- <?php  if($connection) echo "<h1 style= color:white;>We are Connected</h1>;" ?> -->
+
 <?php include "includes/nav.php" ?>
 
 <div id="page-wrapper">
