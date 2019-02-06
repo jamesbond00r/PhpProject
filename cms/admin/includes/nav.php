@@ -41,10 +41,10 @@
 </li>
 
 <li>
-<a href="javascript:;" data-toggle="collapse" data-target="#post"><i class="fa fa-fw fa-arrows-v"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
-<ul id="post" class="collapse">
+<a href="../admin/posts.php" data-toggle="collapse" data-target="#post"><i class="fa fa-fw fa-arrows-v"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
+<ul id="#" class="collapse">
 <li>
-<a href="#">View All Post</a>
+<a href="../posts.php">View All Post</a>
 </li>
 <li>
 <a href="#">Add Post</a>
@@ -52,7 +52,7 @@
 </ul>
 </li>
 <li>
-<a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Categories Page</a>
+<a href="../admin/categories.php"><i class="fa fa-fw fa-wrench"></i> Categories Page</a>
 </li>
 <li>
 <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Users <i class="fa fa-fw fa-caret-down"></i></a>

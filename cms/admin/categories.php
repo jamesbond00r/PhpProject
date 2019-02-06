@@ -1,5 +1,4 @@
 <?php include "includes/header.php" ?>
-
 <body>
 
 <div id="wrapper">
@@ -21,26 +20,9 @@ Welcomee
 <div class="col-xs-6">
 <?php 
 
-if(isset($_POST['submit'])) {
-
-	$cat_title = $_POST['cat_title'];
-
-	 if($cat_title == "" || empty($cat_title)){
-	 	echo "Input can not be blank.";
-	 } else {
-
-	 	$query = "INSERT INTO categories(cat_title) ";
-	 	$query .= "VALUE('{$cat_title}') ";
-	 	$create_category_query = mysqli_query($connection, $query);
-
-	 	if(!$create_category_query){
-
-	 		die('Something went wrong' > mysqli_error($connection));
-	 	}
-	 }
 
 
-}
+insert_categories();
 
 
 ?>
@@ -57,7 +39,17 @@ if(isset($_POST['submit'])) {
 
 </form>
 
-</div>
+
+<?php
+
+if(isset($_GET['edit'])){
+	$cat_id = $_GET['edit'];
+
+	include "includes/update.php";
+}
+
+
+?>
 
 
 <div class="col-xs-6">
@@ -95,6 +87,7 @@ echo "<tr>";
 echo "<td>{$cat_id}</td>";
 echo "<td>{$cat_title}</td>";
 echo "<td><a href='categories.php?delete={$cat_id}'>Delete</a></td>";
+echo "<td><a href='categories.php?edit={$cat_id}'>Edit</a></td>";
 echo "</tr>";
 
 }  
